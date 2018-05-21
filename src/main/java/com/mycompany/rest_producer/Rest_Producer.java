@@ -83,10 +83,10 @@ while(sc.hasNext())
 
 {
 
-inline=sc.nextLine();
-producer.send(new ProducerRecord<String,String>(topicName, inline));
-}
+inline+=sc.nextLine();
 
+}
+producer.send(new ProducerRecord<String,String>(topicName, inline));
 
 sc.close();
           
